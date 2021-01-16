@@ -1,12 +1,14 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
+
 
 int main() 
 {
     cout << endl;
     cout << "Enter number of hours worked in a week: ";
     
-    float hoursPerWeek;
+    double hoursPerWeek;
 
     double wage = 16.00;
     const double OVERTIME = 1.50 * wage;
@@ -17,17 +19,13 @@ int main()
     {
         double hoursOvertime = hoursPerWeek - 40;
         double overtimePay = hoursOvertime * OVERTIME;
-
-        
-
     }
+    double grossPay;
+    grossPay = (wage * hoursPerWeek) + double(wage);
+    
+    //FIXME make gross a print as a double
 
-    const double WAGE = 16.00;
-
-    float grossPay = WAGE * hoursPerWeek;
-
-
-    cout << "Gross pay: $" << grossPay << endl << endl;
+    cout << fixed << setprecision(2)  << "Gross pay: $" << double(grossPay) << endl << endl;
 
     double socialSecurityTax = 0.06 * grossPay;
     double federalIncomeTax = 0.14 * grossPay;
@@ -41,7 +39,7 @@ int main()
 
     float takeHomePay = grossPay - socialSecurityTax - federalIncomeTax - stateIncomeTax - medicalInsurance;
 
-    cout << "Net take-home pay for the week: $" << takeHomePay << endl;
+    cout << "Net take-home pay for the week: $" << takeHomePay << endl << endl;
     return 0;
 }
 

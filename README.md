@@ -1,3 +1,1 @@
-# CPSC_298-Cpp
-# kellerdevin-kellerdevin-CPSC_298-Cpp
-# kellerdevin-kellerdevin-CPSC_298-Cpp
+# CPSC 298-C++  Assignments
