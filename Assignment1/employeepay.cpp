@@ -23,7 +23,7 @@ int main()
     double grossPay;
     grossPay = (wage * hoursPerWeek) + double(wage);
     
-    //FIXME make gross a print as a double
+    // FIXME: make gross a print as a double
 
     cout << fixed << setprecision(2)  << "Gross pay: $" << double(grossPay) << endl << endl;
 
