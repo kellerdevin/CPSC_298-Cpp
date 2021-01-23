@@ -3,26 +3,40 @@
 #include <vector>
 using namespace std;
 
-int main() {
-    // read 10 nonnegative integers from user into array numberArray
+int main() 
+{
+    cout << "How many postive integers would you like to enter (Max 10)" << endl;
 
-    const int NUM_ELEMENTS = 10;
-    int numberArray[NUM_ELEMENTS]; 
-    unsigned int i;
+    int num_elements;
+    
+    cin >> num_elements;
 
-    cout << NUM_ELEMENTS << endl;
+    //Checks to see if num_elements > 10
 
-    /* for (i = 0; i < numberArray.size(); ++i)
-    {
-        cin >>  numberArray.at(i);
+    if (num_elements <= 10) {
+        // read 10 nonnegative integers from user into array numberArray
+        cout << "Enter  integers: " << endl;
+
+        vector<int> numberArray(num_elements);
+        int i;
+
+        for (i = 0; i < numberArray.size(); ++i)
+        {
+            cin >> numberArray.at(i);
+        }
+        
+        //print integers back to screen
+        cout << "Your numbers: ";
+
+        for (i = 0; i < numberArray.size() - 1; ++i)
+        {
+            cout << numberArray.at(i) << ", ";
+        }
+        cout << numberArray.back() << endl;
+    }
+    else{
+        cout << "Error: user tried to enter more than 10 elements";
     }
 
-    cout << "Enter 5 integers: " << endl;
-
-
-    //print integers back to screen
-
     return 0;
-    */
-
 }
