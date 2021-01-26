@@ -31,7 +31,7 @@ int main()
     double socialSecurityTax = 0.06 * grossPay;
     double federalIncomeTax = 0.14 * grossPay;
     double stateIncomeTax = 0.05 * grossPay;
-    int medicalInsurance = 10.00;
+    double medicalInsurance = 10.00;
 
     cout << "Amount that goes to Social Security: $" << socialSecurityTax << endl;
     cout << "Amount that goes to Federal Income Tax: $" << federalIncomeTax << endl;
