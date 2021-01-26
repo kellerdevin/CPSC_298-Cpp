@@ -1,23 +1,27 @@
 #include <iostream>
 using namespace std;
 
+
 int main()
 {
-    const double TON = 35273.92;
+    const float TON = 35273.92;
 
     // Grab cereal weight from user
     cout << "Enter cereal weight in ounces: ";
 
 
-    float cereal;
-    cin >> cereal;
+    double cerealWeight;
+    cin >> cerealWeight;
 
-    float weight;
+    double weightInTons;
 
-    //Calculate weight in tons
-    weight = cereal / TON;
+    //Calculate Weight in tons
+    
+    weightInTons = cerealWeight / TON;
 
-    cout << "The cereal is " << weight << " metric tons";
+
+
+    cout << "The cereal is " << weightInTons << " metric tons";
     cout << endl;
 
     return 0;
